@@ -20,35 +20,37 @@ namespace Assignment2
             this.tempValue = tempValue;
         }
 
-        public double ConvertCelciusToFahrenheit()
+        public double ConvertCelciusToFahrenheit() // 1
         {
             return (this.tempValue * 1.8) + 32;
         }
-        public double ConvertCelciusToKelvin()
+        public double ConvertCelciusToKelvin() // 2
         {
             return this.tempValue + 273.15;
         }
 
-        public double ConvertKelvinToFahrenheit()
-
+        public double ConvertFahrenheitToCelsius() // 3
         {
-            return (this.tempValue * (9 / 5)) - 459.67;
+            return (this.tempValue - 32) * 5/9;
         }
-        public double ConvertKelvinToCelsius()
-
-        {
-            return this.tempValue - 273.15;
-        }
-        public double ConvertFahrenheitToKelvin()
-
+      
+        public double ConvertFahrenheitToKelvin() // 4
         {
             return (this.tempValue - 32) * (5 / 9) + 273.15;
         }
-        public double ConvertFahrenheitToCelsius()
 
+        public double ConvertKelvinToCelsius() // 5
         {
-            return (this.tempValue - 32) * 0.5556;
+            return this.tempValue - 273.15;
         }
+
+        public double ConvertKelvinToFahrenheit() // 6
+        {
+            return (this.tempValue - 273.15) * (9 / 5) + 32;
+        }
+
+
+
 
 
 
